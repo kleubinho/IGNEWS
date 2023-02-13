@@ -22,11 +22,12 @@
     line-height: 4.5rem;
     font-weight: 900;
     margin-top: 2.5rem;
+    
+    span {
+      color: var(--cyan-500);
+    }
   }
 
-  span {
-    color: var(--cyan-500);
-  }
 
   p {
     font-size: 1.5rem;

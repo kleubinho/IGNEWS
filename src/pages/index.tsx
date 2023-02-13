@@ -1,9 +1,11 @@
+import { GetServerSideProps } from "next";
 import Head from "next/head";
 import { SubsribeButton } from "../components/SubscribeButton";
 
-import styles from './home.module.scss'
+import styles from "./home.module.scss";
 
-export default function Home() {
+export default function Home(props) {
+  console.log(props);
   return (
     <>
       <Head>
@@ -12,9 +14,11 @@ export default function Home() {
       <main className={styles.contentContainer}>
         <section className={styles.hero}>
           <span>👏 Hey, welcome</span>
-          <h1>News about the <span>React</span> world.</h1>
+          <h1>
+            News about the <span>React</span> world.
+          </h1>
           <p>
-            Get access ti akk tge publications <br/>
+            Get access ti akk tge publications <br />
             <span>for $9.90 month</span>
           </p>
 
@@ -26,3 +30,11 @@ export default function Home() {
     </>
   );
 }
+
+export const getServerSideProps: GetServerSideProps = async () => {
+  return {
+    props: {
+      nome: "Kleber",
+    },
+  };
+};
