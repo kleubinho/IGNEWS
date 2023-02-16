@@ -10,8 +10,6 @@ interface SubscribeButtonProps {
 export function SubsribeButton({ priceId }: SubscribeButtonProps) {
   const { data: session } = useSession();
 
-  console.log('logado',session)
-
  async function handleSubscribe() {
     if(!session){
         signIn('github')
