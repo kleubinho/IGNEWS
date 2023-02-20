@@ -1,0 +1,28 @@
+{
+  "uid": {
+    "__TYPE__": "UIDContent",
+    "value": "angry"
+  },
+  "title": {
+    "__TYPE__": "StructuredTextContent",
+    "value": [
+      {
+        "type": "paragraph",
+        "content": {
+          "text": "Non excepteur pariatur cillum laborum irure ex sint reprehenderit nisi. Adipisicing occaecat proident commodo fugiat aliqua."
+        }
+      }
+    ]
+  },
+  "content": {
+    "__TYPE__": "StructuredTextContent",
+    "value": [
+      {
+        "type": "paragraph",
+        "content": {
+          "text": "Velit eiusmod sunt culpa tempor incididunt sint amet ea irure deserunt anim mollit."
+        }
+      }
+    ]
+  }
+}
